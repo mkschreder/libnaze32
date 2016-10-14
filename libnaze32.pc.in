@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+libdir=@libdir@
+
+Name: libnaze32
+Description: Naze32 board development library
+Version: @VERSION@
+Cflags: 
+Libs: -lnaze32
