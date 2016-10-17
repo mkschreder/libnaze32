@@ -3,6 +3,7 @@
 #include "naze32.h"
 #include "leds.h"
 #include "uart.h"
+#include "usb_vcp.h"
 
 void naze32_init(void){
 	//SystemCoreClockUpdate();
@@ -61,6 +62,8 @@ void naze32_init(void){
 	SysTick_Config(SystemCoreClock / 1000); 
 
 	naze32_led_init(); 
+	
+	usb_vcp_init(); 
 
 	uart_init(115200); 
 }
